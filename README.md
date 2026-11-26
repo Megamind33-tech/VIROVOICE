@@ -9,6 +9,24 @@ The natural voice of **Viro**, the voice assistant inside the HOF launcher. HOF 
 | `vector_estimator.onnx` | 34,041,483 | `0cbf3f00818b3b8bff87bd6374651cef402af50b0c4efdf923ebb9b1394a8340` |
 | `vocoder.onnx` | 101,405,066 | `19bd51f47a186069c752403518a40f7ea4c647455056d2511f7249691ecddf7c` |
 
+## The voice library
+
+`manifest.json` lists the shared model files and every voice. A voice is just one small style file in `voices/` (about 420 KB), so a new voice costs the user a fraction of a second to download, not another 143 MB.
+
+| Voice | Style file | | Voice | Style file |
+|---|---|---|---|---|
+| Mwila (woman) | `voices/F1.json` | | Kabwe (man) | `voices/M1.json` |
+| Thandi (woman) | `voices/F2.json` | | Daniel (man) | `voices/M2.json` |
+| Ruth (woman) | `voices/F3.json` | | Mulenga (man) | `voices/M3.json` |
+| Naomi (woman) | `voices/F4.json` | | Joseph (man) | `voices/M4.json` |
+| Bupe (woman) | `voices/F5.json` | | Samuel (man) | `voices/M5.json` |
+
+### Adding a voice
+
+1. Put the style file in `voices/` (for example `voices/F6.json`).
+2. Add an entry to `manifest.json` with its `id`, `name`, `about`, `style` (the file name without `.json`), `file`, `bytes`, `sha256`, and `"builtin": false`.
+3. Commit to `main`. HOF checks the manifest, shows the new voice under **More voices**, and downloads only that one file after checking its SHA-256.
+
 ## Download
 
 Each file is available at `https://github.com/Megamind33-tech/VIROVOICE/raw/main/<file name>`. The HOF app does this for you: open **Viro**, then **Voices**, then **Get Viro's natural voices**.

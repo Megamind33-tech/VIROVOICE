@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "licence": "BigScience Open RAIL-M",
+  "engine": "Supertonic 2",
+  "base": [
+    {
+      "name": "duration_predictor.onnx",
+      "bytes": 582729,
+      "sha256": "3b84b5626d9bad3238822bc7bf8a22f7fcec05d1de6ddc48ada7570fe66e84dd"
+    },
+    {
+      "name": "text_encoder.onnx",
+      "bytes": 7251273,
+      "sha256": "cbb96db1dc8b3e3093d8d423296bc1699806ac06b00a38c6346d9ff30e4d261e"
+    },
+    {
+      "name": "vector_estimator.onnx",
+      "bytes": 34041483,
+      "sha256": "0cbf3f00818b3b8bff87bd6374651cef402af50b0c4efdf923ebb9b1394a8340"
+    },
+    {
+      "name": "vocoder.onnx",
+      "bytes": 101405066,
+      "sha256": "19bd51f47a186069c752403518a40f7ea4c647455056d2511f7249691ecddf7c"
+    }
+  ],
+  "voices": [
+    {
+      "id": "mwila",
+      "name": "Mwila",
+      "about": "Woman's voice",
+      "style": "F1",
+      "file": "voices/F1.json",
+      "bytes": 420050,
+      "sha256": "6106950ebeb8a5da29ea22075f605db659cd07dbc288a68292543d9129aa250f",
+      "builtin": true
+    },
+    {
+      "id": "thandi",
+      "name": "Thandi",
+      "about": "Woman's voice",
+      "style": "F2",
+      "file": "voices/F2.json",
+      "bytes": 420293,
+      "sha256": "8b97feb16d79ac0447136796708feac5f83dbabe92a5be1168212653c38729ae",
+      "builtin": true
+    },
+    {
+      "id": "ruth",
+      "name": "Ruth",
+      "about": "Woman's voice",
+      "style": "F3",
+      "file": "voices/F3.json",
+      "bytes": 419887,
+      "sha256": "7eda5bccb4e6eb7f228fa182462d5fcf982d77628234603599027f0734d70c29",
+      "builtin": true
+    },
+    {
+      "id": "naomi",
+      "name": "Naomi",
+      "about": "Woman's voice",
+      "style": "F4",
+      "file": "voices/F4.json",
+      "bytes": 419642,
+      "sha256": "e056fc2bee393edc8bff761eb28f33fb461e8dad828c3b05348a010ac1b7bb79",
+      "builtin": true
+    },
+    {
+      "id": "bupe",
+      "name": "Bupe",
+      "about": "Woman's voice",
+      "style": "F5",
+      "file": "voices/F5.json",
+      "bytes": 419709,
+      "sha256": "ce7645ad7e3c13cca04e0d62bf890ef9ac401988005ba8f5e9c9b59257bc6931",
+      "builtin": true
+    },
+    {
+      "id": "kabwe",
+      "name": "Kabwe",
+      "about": "Man's voice",
+      "style": "M1",
+      "file": "voices/M1.json",
+      "bytes": 420510,
+      "sha256": "a04c823cbda6dd1c7de131ec68fea83bbb70d7f29d61623304eb871e3b83b5a1",
+      "builtin": true
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel",
+      "about": "Man's voice",
+      "style": "M2",
+      "file": "voices/M2.json",
+      "bytes": 420285,
+      "sha256": "7ddd07bf873a3fd67d09ef4e8293b486beb658158b47e371166198e4c6926072",
+      "builtin": true
+    },
+    {
+      "id": "mulenga",
+      "name": "Mulenga",
+      "about": "Man's voice",
+      "style": "M3",
+      "file": "voices/M3.json",
+      "bytes": 420005,
+      "sha256": "e8e77a56459e4dc8cdfeb88e6f778dc9a0adf22e1184414f4b0e82a5d1edbe72",
+      "builtin": true
+    },
+    {
+      "id": "joseph",
+      "name": "Joseph",
+      "about": "Man's voice",
+      "style": "M4",
+      "file": "voices/M4.json",
+      "bytes": 419957,
+      "sha256": "95322725e4d25d9ed4e7dcccbf0f3726b0e9a2471d876b7942373218dbd30174",
+      "builtin": true
+    },
+    {
+      "id": "samuel",
+      "name": "Samuel",
+      "about": "Man's voice",
+      "style": "M5",
+      "file": "voices/M5.json",
+      "bytes": 419619,
+      "sha256": "be52f82327da63ff18481ce2dd8060c7df432e0168d748745ef3e21b92d706a5",
+      "builtin": true
+    }
+  ]
+}
